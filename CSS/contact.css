@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500&family=Unna:wght@400;700&display=swap');
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'Unna', serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 4rem 0 4rem 0;
+    border-bottom: 1px black solid;  
+}
+
+
+.header-video {
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+   
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100wh;
+    background-color: rgb(23, 39, 56);
+    opacity: 90%;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 46px;
+    letter-spacing: 0.5rem;
+    color:black;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 7px 10px 7px;
+    border-radius: 15px;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+a {
+    text-decoration: none;
+    color:white;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+ a:hover, a:active {
+    color: rgb(34, 57, 81);
+    background-color: white;
+    transition: 1s;
+    opacity: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    background-color: white;
+}
+
+.container-1{
+    width: 60%;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.container-2 {
+    width: 40%;
+    margin-top: 4rem;
+    margin-right: 2rem;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.section {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgb(23, 39, 56);
+    color:rgb(242, 243, 240);
+    
+}
+
+input { 
+    width: 49%;
+    height: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid black;
+    padding-left: 3px;
+    font-size: 1rem;
+
+}
+
+textarea {
+    width: 99%;
+    height: 7.5rem;
+    border: 1px solid black;
+    margin: 0.5rem 1.5rem 1.5rem 0rem;
+    padding: 3px;
+}
+
+.submit {
+width: 99%;
+background-color: rgb(23, 39, 56);
+color: white;
+cursor: pointer;
+}
+
+.submit:hover {
+background-color: rgb(52, 81, 111);
+}
+
+.container-3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}

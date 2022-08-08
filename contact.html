@@ -1,20 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header> 
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/contact.css" />
+    <title>Negroni Contact</title>
+  </head>
+  <body>
+    <video
+      class="header-video"
+      src="./Media/Beach - 7262.mp4"
+      autoplay
+      muted
+      loop
+    ></video>
+    <header>
+      <h1>Negroni Voyages</h1>
+      <!-- <video src="./Media/Beach - 7262.mp4"></video> -->
     </header>
+    <nav>
+      <a href="#">HOMEPAGE</a>
+      <a href="#">TRIPS</a>
+      <a href="#">MAGAZINE</a>
+      <a href="contact.html">CONTACT US</a>
+    </nav>
     <main>
-
+      <div class="container-1">
+        <h2>Message us.</h2>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="First Name"
+          required
+        />
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Last Name"
+          required
+        /><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <input
+          type="text"
+          id="pnumber"
+          name="pnumber"
+          placeholder="Phonenumber"
+          required
+        /><br />
+        <textarea
+          name="Message"
+          placeholder="Write your message..."
+          required
+        ></textarea>
+        <br />
+        <input class="submit" type="submit" value="SUBMIT" />
+      </div>
+      <div class="container-2">
+        <!-- <h2>Reach us in another way.</h2> -->
+        <div class="section">
+          <h3>CALL US</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit atque
+            laboriosam harum distinctio. Explicabo, architecto. Commodi, vitae a
+            dignissimos quas doloremque ex, aperiam sequi voluptatum impedit
+            necessitatibus eum porro quisquam.
+          </p>
+        </div>
+        <div class="section">
+          <h3>BOOK A TIME</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit atque
+            laboriosam harum distinctio. Explicabo, architecto. Commodi, vitae a
+            dignissimos quas doloremque ex, aperiam sequi voluptatum impedit
+            necessitatibus eum porro quisquam.
+          </p>
+        </div>
+        <div class="section">
+          <h3>VISIT</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit atque
+            laboriosam harum distinctio. Explicabo, architecto. Commodi, vitae a
+            dignissimos quas doloremque ex, aperiam sequi voluptatum impedit
+            necessitatibus eum porro quisquam.
+          </p>
+        </div>
+      </div>
     </main>
-    <footer>
-        
-    </footer>
-</body>
+    <div class="container-3">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.3304013432107!2d9.445628050930019!3d42.69672432166435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d7240f79c03cef%3A0x7d27838d4f5942c7!2sNegroni%20Voyages!5e0!3m2!1set!2see!4v1659961706321!5m2!1set!2see"
+        width="1200"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <footer></footer>
+  </body>
 </html>
