@@ -174,7 +174,8 @@ footer {
 
 .footer-text {
     color:white;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Unna', serif;
+    font-size: 1rem;
 }
 
 .fa {
@@ -187,11 +188,12 @@ footer {
     background-color: white;
     flex-direction: row;
     margin: 0.5rem;
+    min-width: 2.5em;
 }
 
 .fa:hover {
     color: white;
-    background-color: rgb(23, 39, 56);
+    background-color: rgb(52, 81, 111);
 
 }
 
