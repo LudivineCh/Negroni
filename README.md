@@ -1,5 +1,5 @@
 # Negroni
-A travel agency website
+A travel agency website 
 
-PROJECT IN PROGRESS
-start date 01/08/2022
+- Main pages coded by me
+- Contact page coded by Christelle KONSA
