@@ -166,10 +166,9 @@ section .title {
     position: relative;
     margin-top: 50px;
     }
-section .title-mag {
+section .mag-container {
     position: relative;
     margin-top: 50px;
-    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
     }     
 section .title h3 {
     font-size: 60px;
@@ -178,13 +177,6 @@ section .title h3 {
     padding: 10px;
     font-family: 'Calligraffitti', cursive;
     }
-section .title-mag h3 {
-    font-size: 60px;
-    margin-top: 40px;
-    text-align: center;
-    padding: 10px;
-    font-family: 'Calligraffitti', cursive;
-    }    
 
 section .text-container {
     display: flex;
@@ -232,9 +224,35 @@ section .text-container .mag-box img {
     object-fit:cover;
     }
 
+section .mag-container {
+      display: flex; /* Set the container display to flex */
+      justify-content: center; /* Center the content horizontally */
+      align-items: center; /* Center the content vertically */
+      position: relative; /* Set the container position to relative */
+    }
+    
+section .image-overlay {
+      position: absolute; /* Set the text position to absolute */
+      text-align: center; /* Center the text content */
+    }
+
+.image-overlay h3 {
+      margin: 0;
+      position: relative; /* Set the text position to absolute */
+      transform: translate(0%, -230%); /* Center the text horizontally and vertically */
+      font-family: 'Calligraffitti', cursive;
+      font-size: 60px;
+      color: black; /* Set the text color to white */
+    }
+    
+section .mag-container img {
+      max-width: 100%; /* Set the maximum width of the image to 100% of its parent element */
+      height: auto; /* Automatically adjust the height based on the aspect ratio */
+      }
 
 
-@media screen and (max-width:1450px)
+
+@media screen and (min-width: 1200.1px) and (max-width:1450px)
   {
     section h2 {
           font-size: 50px;
@@ -246,7 +264,7 @@ section .text-container .mag-box img {
           position: relative;
           margin-bottom: 40px;
           } 
-    section .title-mag {
+    section .mag-container {
           position: relative;
           margin-bottom: 40px;
           } 
@@ -270,9 +288,12 @@ section .text-container .mag-box img {
     section .text-container .mag-box img {
           min-width: 230px;
     }
+    section .image-overlay h3 {
+      font-size: 52px;
+    }
 }
 
-@media screen and (max-width:1200px)
+@media screen and (min-width: 950.1px) and (max-width:1200px)
   {
     #hero .caption h1 {
           font-size:3rem;
@@ -287,16 +308,17 @@ section .text-container .mag-box img {
           position: relative;
           margin-top: 250px;
           } 
-    section .title-mag {
+    section .mag-container {
           position: relative;
           margin-top: 200px;
           } 
     section .title h3{
           font-size: 40px;
     }
-    section .title-mag h3{
-          font-size: 50px;
+    section .image-overlay h3 {
+      font-size: 40px;
     }
+    
     section .text-container {
           margin: 15px;
     }
@@ -318,108 +340,147 @@ section .text-container .mag-box img {
     section .text-container .mag-box img {
           min-width: 320px;
     }
+    
   }
 
 
-@media screen and (max-width:950px)
+@media screen and (min-width: 768.1px) and (max-width:950px)
   {
-    #hero .caption h1 {
-          font-size:2.5rem;
-    }
-  
-    #hero .caption h2 {
-          font-size:1.75rem;
-    }
+      #hero .caption h1 {
+            font-size:2.5rem;
+      }
+      
+      #hero .caption h2 {
+            font-size:1.75rem;
+      }
 
-    section .container {
-          margin: 20px;
-          }
-    section .title {
-          position: relative;
-          margin-top: 150px;
-          } 
-    section .title-mag {
-          position: relative;
-          margin-top: 650px;
-          } 
-    section .text-container {
-          margin: 30px;
-    }
-    section .text-container .text-box {
-          flex-basis:22%;
-          margin: 5px;
-          padding: 5px;
-    }
-    section h2 {
-          font-size: 35px;
-    }
-    section .text-container .text-box h4 {
-          font-size: 20px;
-    }
-    section .text-container .text-box img {
-          min-width: 300px;
-    }
-    section .text-container .mag-box h4 {
-          font-size: 20px;
-    }
-    section .text-container .mag-box img {
-          min-width: 300px;
-    }
+      section .container {
+            margin: 20px;
+            position: relative;
+            margin-top: 150px;
+            }
+
+      section .mag-container {
+            position: relative;
+            margin-top: 50px;
+            }
+      section .title h3{
+            font-size: 40px;
+      }
+      section .image-overlay h3 {
+        font-size: 40px;
+      }
+      section .image-overlay h3 {
+        font-size: 40px;
+      } 
+      section .text-container {
+            margin: 30px;
+      }
+      section .text-container .text-box {
+            flex-basis:22%;
+            margin: 5px;
+            padding: 5px;
+      }
+      section h2 {
+            font-size: 35px;
+      }
+      section .text-container .text-box h4 {
+            font-size: 20px;
+      }
+      section .text-container .text-box img {
+            min-width: 300px;
+      }
+      section .text-container .mag-box h4 {
+            font-size: 20px;
+      }
+      section .text-container .mag-box img {
+            min-width: 300px;
+      }
 }
    
 
 
-@media screen and (max-width:768px)
+@media screen and (min-width: 600.1px) and (max-width:768px)
 {
-    #hero .caption h1 {
-          font-size:2.5rem;
-    }
-    #hero .caption h2 {
-          font-size:1.75rem;
-    }
-    .btn {
-          font-size: 22px;
-    }
-    section .container {
-          margin: 10px;
-    }
-    section .title {
-          position: relative;
-          margin-top: 900px;
-          } 
-    section .title-mag {
-          position: relative;
-          margin-top: 650px;
-          } 
-    section .text-container {
-          margin: 15px;
-    }
-    section .text-container .text-box {
-          flex-basis:20%;
-          margin: 2px;
-          padding: 2px;
-    }
-    section h2 {
-          font-size: 35px;
-    }
-    section .text-container .text-box h4 {
-              font-size: 20px;
-    }
-    section .text-container .mag-box img {
-          min-width: 250px;
-    }
-    section .text-container .mag-box h4 {
-          font-size: 20px;
-    }
-    section .text-container .mag-box img {
-          min-width: 250px;
-    }
+      #hero .caption h1 {
+            font-size:2.5rem;
+      }
+      #hero .caption h2 {
+            font-size:1.75rem;
+      }
+      .btn {
+            font-size: 22px;
+      }
+      section .container {
+            margin: 10px;
+            position: relative;
+            margin-top: -200px;
+            margin-bottom: -220px;
+      }
+
+      section .mag-container {
+            position: relative;
+            margin-top: -200px;
+            margin-bottom: -220px;
+            }
+
+      section .title h3 {
+            font-size: 30px;
+      }
+      section .image-overlay h3 {
+            font-size: 30px;
+      }    
+      section .text-container {
+            margin: 15px;
+      }
+      section .text-container .text-box {
+            flex-basis:20%;
+            margin: 2px;
+            padding: 2px;
+      }
+      section h2 {
+            font-size: 35px;
+      }
+      section .text-container .text-box h4 {
+                  font-size: 20px;
+      }
+      section .text-container .mag-box img {
+            min-width: 250px;
+      }
+      section .text-container .mag-box h4 {
+            font-size: 20px;
+      }
+      section .text-container .mag-box img {
+            min-width: 250px;
+      }
 }
 
 @media screen and (max-width: 600px) {
-    section h2 {
-          font-size: 35px;
-    }
+      section {
+            max-height:fit-content;
+      }
+      section h2 {
+            font-size: 35px;
+      }
+
+      section .container {
+            margin: 10px;
+            position: relative;
+            margin-top: 900px;
+            margin-bottom: -220px;
+            } 
+      section .mag-container {
+            position: relative;
+            margin-top: -500px;
+            margin-bottom: -220px;
+            }
+
+      section .title h3 {
+            font-size: 35px;
+      }
+      section .image-overlay h3 {
+            font-size: 35px;
+      }    
     section .text-container {
           flex-direction: column;
     }
@@ -429,14 +490,7 @@ section .text-container .mag-box img {
     .btn i {
           font-size: 16px;
     }
-    section .title {
-          position: relative;
-          margin-top: 1400px;
-          }
-    section .title-mag {
-          position: relative;
-          margin-top: 650px;
-          }  
+
     section .text-container .text-box h4 {
           font-size: 20px;
     }
