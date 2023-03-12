@@ -240,7 +240,7 @@ section .image-overlay {
       margin: 0;
       position: relative; /* Set the text position to absolute */
       transform: translate(0%, -230%); /* Center the text horizontally and vertically */
-      font-family: 'Calligraffitti', cursive;
+      font-family: 'Baskervville', serif;
       font-size: 60px;
       color: black; /* Set the text color to white */
     }
@@ -249,6 +249,39 @@ section .mag-container img {
       max-width: 100%; /* Set the maximum width of the image to 100% of its parent element */
       height: auto; /* Automatically adjust the height based on the aspect ratio */
       }
+
+section .container .title h6{
+      font-family: 'Baskervville', serif;
+      font-style: italic;
+      font-size: 45px;
+      margin-top: 200px;
+      text-align: center;
+      padding: 10px;
+      }
+section .container .quote-box{
+      align-items: center;
+      justify-content: center;
+}
+section .container .quote-box img{
+      max-width:100%;
+}
+
+section .text-container .info-box {
+      flex-basis:30%;
+      margin: 10px;
+      padding: 20px;
+      background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+      }   
+    
+section .text-container .info-box h4{
+      font-family: 'Baskervville', serif;
+      }  
+h5 {
+      font-size:20px;
+      font-family: 'Baskervville', serif;
+      margin-bottom:0.5rem;
+      }
+
 
 
 
@@ -291,56 +324,63 @@ section .mag-container img {
     section .image-overlay h3 {
       font-size: 52px;
     }
+    section .container .title h6{
+      font-size: 40px;
+      margin-top: 150px;
+    }
 }
 
 @media screen and (min-width: 950.1px) and (max-width:1200px)
   {
-    #hero .caption h1 {
-          font-size:3rem;
-    }
-    #hero .caption h2 {
-          font-size:2rem;
-    }
-    section .container {
-          margin: 50px;
-    }
-    section .title {
-          position: relative;
-          margin-top: 250px;
-          } 
-    section .mag-container {
-          position: relative;
-          margin-top: 200px;
-          } 
-    section .title h3{
-          font-size: 40px;
-    }
-    section .image-overlay h3 {
-      font-size: 40px;
-    }
-    
-    section .text-container {
-          margin: 15px;
-    }
-    section .text-container .text-box {
-          flex-basis:20%;
-          margin: 10px;
-          padding: 10px;
-    }
+      #hero .caption h1 {
+            font-size:3rem;
+      }
+      #hero .caption h2 {
+            font-size:2rem;
+      }
+      section .container {
+            margin: 10px;
+            position: relative;
+            margin-top: 200px;
+            } 
+      section .mag-container {
+            position: relative;
+            margin-top: 80px;
+            } 
+      section .title h3{
+            font-size: 40px;
+      }
+      section .image-overlay h3 {
+            font-size: 40px;
+      }
+      
+      section .text-container {
+            margin: 15px;
+      }
+      section .text-container .text-box {
+            flex-basis:20%;
+            margin: 10px;
+            padding: 10px;
+      }
 
-    section .text-container .text-box h4 {
-          font-size: 22px;
-    }
-    section .text-container .text-box img {
-          min-width: 320px;
-    }
-    section .text-container .mag-box h4 {
-          font-size: 22px;
-    }
-    section .text-container .mag-box img {
-          min-width: 320px;
-    }
-    
+      section .text-container .text-box h4 {
+            font-size: 22px;
+      }
+      section .text-container .text-box img {
+            min-width: 320px;
+      }
+      section .text-container .mag-box h4 {
+            font-size: 22px;
+      }
+      section .text-container .mag-box img {
+            min-width: 320px;
+      }
+      #quote {
+            margin-top: -100px;
+      } 
+      section .container .title h6{
+            font-size: 37px;
+      }
   }
 
 
@@ -357,7 +397,7 @@ section .mag-container img {
       section .container {
             margin: 20px;
             position: relative;
-            margin-top: 150px;
+            margin-top: 450px;
             }
 
       section .mag-container {
@@ -395,6 +435,12 @@ section .mag-container img {
       }
       section .text-container .mag-box img {
             min-width: 300px;
+      }
+      #quote {
+            margin-top: -150px;
+      } 
+      section .container .title h6{
+            font-size: 35px;
       }
 }
    
@@ -453,6 +499,15 @@ section .mag-container img {
       section .text-container .mag-box img {
             min-width: 250px;
       }
+      #quote {
+            margin-top: -350px;
+      } 
+      #quote {
+            margin-top: -450px;
+      } 
+      section .container .title h6{
+            font-size: 30px;
+      }
 }
 
 @media screen and (max-width: 600px) {
@@ -466,40 +521,46 @@ section .mag-container img {
       section .container {
             margin: 10px;
             position: relative;
-            margin-top: 900px;
+            margin-top: 1000px;
             margin-bottom: -220px;
             } 
       section .mag-container {
             position: relative;
-            margin-top: -500px;
+            margin-top: -300px;
             margin-bottom: -220px;
             }
 
       section .title h3 {
             font-size: 35px;
-      }
+            }
       section .image-overlay h3 {
             font-size: 35px;
       }    
-    section .text-container {
-          flex-direction: column;
-    }
-    .btn {
-          font-size: 17px;
-        }
-    .btn i {
-          font-size: 16px;
-    }
+      section .text-container {
+            flex-direction: column;
+      }
+      .btn {
+            font-size: 17px;
+            }
+      .btn i {
+            font-size: 16px;
+      }
 
-    section .text-container .text-box h4 {
-          font-size: 20px;
-    }
-    section .text-container .mag-box h4 {
-          font-size: 20px;
-    }
-    section .text-container .mag-box img {
-          width: 400px;
-    }
+      section .text-container .text-box h4 {
+            font-size: 20px;
+      }
+      section .text-container .mag-box h4 {
+            font-size: 20px;
+      }
+      section .text-container .mag-box img {
+            width: 400px;
+      }
+      #quote {
+            margin-top: -550px;
+      } 
+      section .container .title h6{
+            font-size: 25px;
+      }
 }
 
 
